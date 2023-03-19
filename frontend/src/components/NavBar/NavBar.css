@@ -2,6 +2,8 @@ ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
@@ -9,7 +11,7 @@ li {
 }
 
 .navBar {
-  background: steelblue;
+  background: black;
   box-shadow: 4px 2px 5px gray;
   color: white;
   margin-bottom: 2rem;
@@ -25,11 +27,42 @@ li {
 
 .navBar button:hover {
   background: white;
-  color: steelblue;
+  color: black;
   cursor: pointer;
 }
 
 .brand {
   cursor: pointer;
   font-size: 2rem;
+}
+
+.middleLinks ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.middleLinks li {
+  margin-right: 20px;
+  color: white;
+}
+
+.rightLinks {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rightLinks li {
+  margin-left: 20px;
+}
+
+.middleLinks a {
+  color: white;
+  text-decoration: none;
 }

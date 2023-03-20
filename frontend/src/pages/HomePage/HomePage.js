@@ -14,21 +14,19 @@ const HomePage = () => {
   useEffect(() => {
     const fetchSneakers = async () => {
       try {
-        let response = await axios.get("http://127.0.0.1:8000/api/sneakers/", {
-          headers: {
-            Authorization: "Bearer " + token,
-          },
-        });
+        let response = await axios.get("http://127.0.0.1:8000/api/sneakers/all/");
         setSneakers(response.data);
       } catch (error) {
-        console.log(error.response.data);
+        console.log(error.response.data)
+        
       }
     };
     fetchSneakers();
-  }, [token]);
+    }, []);
+  
   return (
     <div className="container">
-      <h1>Home Page for {user.username}!</h1>
+      <h1>Home Page!</h1>
       {sneakers &&
         sneakers.map((sneaker) => (
           <p key={sneaker.id}>

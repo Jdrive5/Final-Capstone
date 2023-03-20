@@ -53,6 +53,11 @@ const Navbar = () => {
               <Link to="/login">Login</Link>
               <Link to="/register">Register</Link>
               <Link to="/order-history">My Orders</Link>
+              {user ? (
+            <button onClick={logoutUser}>Logout</button>
+          ) : (
+            <button onClick={() => navigate("/login")}>Login</button>
+          )}
             </span>
             {cart}
           </div>

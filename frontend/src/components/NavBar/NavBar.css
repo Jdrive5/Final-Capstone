@@ -8,6 +8,11 @@ ul {
 
 li {
   font-size: 1.25rem;
+  color: white;
+}
+
+li a {
+  color: white;
 }
 
 .navBar {
@@ -27,7 +32,7 @@ li {
 
 .navBar button:hover {
   background: white;
-  color: black;
+  color: gray;
   cursor: pointer;
 }
 
@@ -65,4 +70,25 @@ li {
 .middleLinks a {
   color: white;
   text-decoration: none;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.links a {
+  color: white;
+}
+
+.cart {
+  color: white;
+}
+
+.cart a {
+  color: white;
 }

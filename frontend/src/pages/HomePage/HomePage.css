@@ -56,4 +56,36 @@
   .product-card button:hover {
     background-color: #444;
   }
+
+  .sneakers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .sneakers-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .sneaker-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sneaker-item img {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .sneaker-item p {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .sneaker-item button {
+    margin-top: 10px;
+  }
   

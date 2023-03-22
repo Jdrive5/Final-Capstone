@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import axios from "axios";
 import "./HomePage.css";
-import { CartContext } from "../../context/CartContext";
+import CartContext from "../../context/CartContext";
 
 const HomePage = () => {
   const [user, token] = useAuth();

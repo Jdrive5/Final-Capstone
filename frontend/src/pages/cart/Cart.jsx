@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { CartContext } from "../../context/CartContext";
-import "./cart.css";
+import CartContext from "../../context/CartContext";
+import "./Cart.css";
 
 const Cart = () => {
   const { cart, increaseQuantity, decreaseQuantity, removeFromCart } = useContext(CartContext);
@@ -23,7 +23,7 @@ const Cart = () => {
               <img src={item.image} alt={item.title} />
               <div className="item-details">
                 <h3>{item.title}</h3>
-                <p>Price: ${item.price.toFixed(2)}</p>
+                <p>Price: ${parseFloat(item.price).toFixed(2)}</p>
                 <p>Quantity: {item.quantity}</p>
                 <button onClick={() => increaseQuantity(item.id)}>+</button>
                 <button onClick={() => decreaseQuantity(item.id)}>-</button>

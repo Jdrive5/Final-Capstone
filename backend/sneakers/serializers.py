@@ -4,4 +4,4 @@ from .models import Sneaker
 class SneakerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Sneaker
-        fields = ['id', 'name', 'style', 'price', 'size']
+        fields = ['id', 'name', 'style', 'price', 'size', 'image']

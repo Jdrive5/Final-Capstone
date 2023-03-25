@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "e1a6465c-7a03-4a41-9911-9a2ccad57ec1",
+		"name": "Capstone_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23679088"
+	},
+	"item": [
+		{
+			"name": "Sneakers",
+			"item": [
+				{
+					"name": "Get_All_Sneakers (unprotected)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/sneakers/all/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sneakers",
+								"all",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_Sneakers_For_User (protected)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5OTYzNDQ3LCJpYXQiOjE2NzkwOTk0NDcsImp0aSI6Ijc5Y2M4MjQxYThlMTQ3ZDI4YzAyYWZkOGEyNDcxMzNiIiwidXNlcl9pZCI6NCwidXNlcm5hbWUiOiJqZHJpdmU1IiwiZmlyc3RfbmFtZSI6Ikp1c3RpbiJ9.Q4m4_LjYZ6WnvP15K9ZqmOtGVDN8wT9s_mm8fRM_3vk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/sneakers/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sneakers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create_Sneaker",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Air Jordan 11 Retro 'Cool Grey'\",\n    \"style\": \"Basketball\",\n    \"price\": 225.0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/sneakers/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sneakers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_Sneaker_By_Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/sneakers/23/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sneakers",
+								"23",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update_Sneaker",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"id\": 23,\n        \"name\": \"Jordan 3 White Cement Reimagined\",\n        \"style\": \"Basketball\",\n        \"price\": \"210.00\",\n        \"size\": 10\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/sneakers/23/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sneakers",
+								"23",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete_Sneaker",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/sneakers/2/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sneakers",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Register_User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"jdrive5\",\n    \"password\": \"Nikeman12068\",\n    \"email\": \"jdrive5@gmail.com\",\n    \"first_name\": \"Justin\",\n    \"last_name\": \"Driver\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login_User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"jdrive5\",\n    \"password\": \"Nikeman12068\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

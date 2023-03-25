@@ -10,6 +10,11 @@
   
   h2 {
     margin-bottom: 1.5rem;
+    color: gray;
+  }
+
+  h3 {
+    color: black;
   }
   
   .cart-items {
@@ -30,11 +35,13 @@
     height: auto;
     object-fit: cover;
     margin-right: 1rem;
+    color: black;
   }
   
   .item-details {
     display: flex;
     flex-direction: column;
+    color: black;
   }
   
   .item-details h3 {

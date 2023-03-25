@@ -20,7 +20,10 @@ li a {
   box-shadow: 4px 2px 5px gray;
   color: white;
   margin-bottom: 2rem;
-  padding: 1.5rem 2rem;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navBar button {
@@ -41,48 +44,25 @@ li a {
   font-size: 2rem;
 }
 
-.middleLinks ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  
-}
-
-.middleLinks li {
-  margin-right: 20px;
-  color: white;
-}
-
-.rightLinks {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.rightLinks li {
-  margin-left: 20px;
-}
-
-.middleLinks a {
+.navbar-links a{
   color: white;
   text-decoration: none;
+  padding: 10px;
 }
 
-.links {
+.navbar-links {
   display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: white;
+  align-items: center;
 }
 
-.links a {
-  color: white;
+.navbar-links a:hover {
+  background-color: white;
+  color: #333;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .cart {
@@ -91,4 +71,11 @@ li a {
 
 .cart a {
   color: white;
+}
+
+.rightLinks a {
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
 }
